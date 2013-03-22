@@ -7,7 +7,7 @@ Example
 =======
 
 ````javascript
-invoice = require('../index.js');
+var invoice = require('../index.js');
 invoice(
     {
         template: __dirname + '/../templates/browserling-dev-plan.tex',
