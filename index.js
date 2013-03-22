@@ -28,7 +28,12 @@ module.exports = function (opts, cb) {
                             cb("Error closing invoice template's fd: " + err);
                             return;
                         }
-                        var latex = spawn("pdflatex", ["-interaction=nonstopmode", "-halt-on-error", info.path]);
+                        var latex = spawn("pdflatex",
+                            ["-interaction=nonstopmode", "-halt-on-error", info.path],
+                            {
+                                cwd : os.tmpDir()
+                            }
+                        );
                         function onExit (code) {
                             if (code) {
                                 cb("Spawning latex failed. Error code: " + code);
