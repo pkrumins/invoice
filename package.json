@@ -1,0 +1,31 @@
+{
+    "name" : "invoice",
+    "version" : "0.0.1",
+    "description" : "generate pdf invoices from tex templates",
+    "main" : "index.js",
+    "directories" : {
+        "examples" : "examples"
+    },
+    "dependencies" : {
+        "temp" : "~0.5.0",
+        "chdir" : "~0.0.0"
+    },
+    "repository" : {
+        "type" : "git",
+        "url" : "git://github.com/pkrumins/invoice.git"
+    },
+    "homepage" : "https://github.com/pkrumins/invoice",
+    "keywords" : [
+        "invoice",
+        "invoices",
+        "tex",
+        "latex",
+        "pdf"
+    ],
+    "author" : {
+        "name" : "Peteris Krumins",
+        "email" : "peter@catonmat.net",
+        "url" : "http://www.catonmat.net"
+    },
+    "license" : "MIT"
+}
