@@ -1,10 +1,10 @@
 invoice = require('../index.js');
 invoice(
     {
-        template: __dirname + '/../templates/browserling.tex',
-        from: "browserling inc",
-        to: "google",
-        period: "jan 12 - feb 12",
+        template: __dirname + '/../templates/browserling-dev-plan.tex',
+        from: "Browserling inc\\\\3276 Logan Street\\\\Oakland, CA 94601\\\\USA",
+        to: "Google",
+        period: "Jan 12 - Feb 12",
         amount: "$20"
     },
     function (err, pdf) {
